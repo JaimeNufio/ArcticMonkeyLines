@@ -44,7 +44,7 @@ $(document).ready(function(){
 				$("#words").fadeIn("fast");
     });
 });
-
+/*
 $("#info").hide();
 $(window).scroll(function() {
     if ($(window).scrollTop() > 100) {
@@ -55,5 +55,5 @@ $(window).scroll(function() {
     	$("#info").fadeOut("fast");
     }
 });
-
+*/
 getRandomSong();
