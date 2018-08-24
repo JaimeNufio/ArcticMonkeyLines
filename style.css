@@ -1,14 +1,15 @@
 #words{
-	font-size:4vw;
+	font-size:3vw;
 }
 
 @font-face {
     font-family: 'cinzelregular';
     src: url('cinzel-regular-webfont.woff2') format('woff2'),
-         url('cinzel-regular-webfont.woff') format('woff');
+         url('cinzel-regular-webfont.woff') format('woff'),
+         url('cinzel-regular-webfont.ttf') format('truetype'),
+         url('cinzel-regular-webfont.svg#cinzelregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 *{
@@ -17,11 +18,46 @@
 	color:#edb;
 }
 
+#btn{
+	padding-bottom:2vw;
+}
+
 #title{
-	font-size: 6.5vw;
+	font-size: 8.5vw;
   overflow: hidden;
   white-space: nowrap;
 	letter-spacing:.4vw;
+	text-transform:uppercase;
+}
+
+#titleMini{
+	margin-top:1vw;
+	font-size: 1.5vw;
+	text-transform:uppercase;
+}
+
+#lyrics{
+	font-size:1vw;
+	white-space: pre-line;
+}
+
+#albumCont{
+	height:20vw;
+	width:20vw;
+	display:inline-block;
+	background-color:#edb;
+	padding:.2vw;
+}
+#album{
+	width:100%;
+}
+
+#from{
+	font-size:1.2vw;
+}
+
+#info{
+	display:hidden;
 }
 
 body{
@@ -38,7 +74,6 @@ hr{
 	font-family:'Cinzel';
 	font-style:italic;
 	color:#edb;
-	text-transform:uppercase;
 
 }
 
@@ -47,6 +82,9 @@ hr{
 	padding-bottom:0em;
 }
 
-
+.row .column{
+	text-align:center;
+	margin-bottom:10vw !important;
+}
 
 

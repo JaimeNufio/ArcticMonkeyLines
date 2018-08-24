@@ -1,5 +1,9 @@
-var song= document.getElementById("words");
-var from= document.getElementById("from");
+var song = document.getElementById("words");
+var from = document.getElementById("from");
+var lyricSlot = document.getElementById("lyrics");
+var album = document.getElementById("album");
+var titleMini= document.getElementById("titleMini");
+var albumTitleMini= document.getElementById("albumTitleMini");
 
 var songJS = songs[0]; 
 
@@ -25,6 +29,10 @@ function getRandomSong(){
 		console.log(Songs[num]);
 		var title = getKey(randomSong);
 		from.innerHTML = "From, \""+title+"\"";
+		lyricSlot.innerHTML = randomSong["lyrics"];
+		album.src=randomSong["image"];
+		titleMini.innerHTML = title;	
+		albumTitleMini.innerHTML = randomSong['album'];	
 	}else{
 		getRandomSong();
 	}
@@ -32,16 +40,18 @@ function getRandomSong(){
 
 $(document).ready(function(){
     $("#words").click(function(){
-        $("#words").fadeOut(500,getRandomSong);
-				$("#words").fadeIn(500);
+        $("#words").fadeOut("fast",getRandomSong);
+				$("#words").fadeIn("fast");
     });
 });
 
-function update(){
-//	getRandomSong();
-//	song.innerHTML=songJS[0]['505']['goodBits'][0];
-}
+$("#info").hide();
+$(window).scroll(function() {
+    if ($(window).scrollTop() > 100) {
+    	$("#info").fadeIn("fast");
+		}else{
+    	$("#info").fadeOut("fast");
+    }
+});
 
-//document.getElementById("btn").onclick=update;
-
-
+getRandomSong();
