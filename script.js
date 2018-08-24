@@ -44,16 +44,14 @@ $(document).ready(function(){
 				$("#words").fadeIn("fast");
     });
 });
-/*
 $("#info").hide();
 $(window).scroll(function() {
     if ($(window).scrollTop() > 100) {
-    	$("#info").fadeIn("fast");
+    	$("#info").fadeIn("slow");
 			console.log("in");
 		}else{
 			console.log("out");
-    	$("#info").fadeOut("fast");
+    	$("#info").fadeOut("slow");
     }
 });
-*/
 getRandomSong();
