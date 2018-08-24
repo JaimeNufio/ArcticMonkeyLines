@@ -19,11 +19,16 @@
 }
 
 #btn{
-	padding-bottom:2vw;
+}
+
+#tip{
+	text-align:center;
+	font-size:2vw;
+	padding:2vw;
 }
 
 #title{
-	font-size: 8.5vw;
+	font-size: 7.5vw;
   overflow: hidden;
   white-space: nowrap;
 	letter-spacing:.4vw;
@@ -40,6 +45,31 @@
 	font-size:1vw;
 	white-space: pre-line;
 }
+
+@media screen and (max-width: 1300px) {
+	.small{
+		font-size:3vw !important;
+	}
+	.lead{
+		font-size:2.5vw !important;
+	}
+	#lyrics{
+		font-size:3.5vw;
+	}
+}
+
+@media screen and (max-width: 1550px) {
+	.small{
+		font-size:2vw !important;
+	}
+	.lead{
+		font-size:1.6vw !important;
+	}
+	#lyrics{
+		font-size:1.5vw;
+	}
+}
+
 
 #albumCont{
 	height:20vw;
@@ -70,6 +100,7 @@ hr{
 	color:#edb;	
 }
 
+
 .container h1{
 	font-family:'Cinzel';
 	font-style:italic;
@@ -84,7 +115,8 @@ hr{
 
 .row .column{
 	text-align:center;
-	margin-bottom:10vw !important;
+	margin-bottom:1vw !important;
+	margin-top:5vw;
 }
 
 

@@ -46,12 +46,16 @@ $(document).ready(function(){
 });
 $("#info").hide();
 $(window).scroll(function() {
-    if ($(window).scrollTop() > 100) {
+    if ($(window).scrollTop() > 10) {
     	$("#info").fadeIn("slow");
+    	$("#tip").fadeOut("fast");
+    	$("#dummy").fadeOut();
 			console.log("in");
 		}else{
 			console.log("out");
-    	$("#info").fadeOut("slow");
+			$("#tip").fadeIn("slow");
+    	$("#info").fadeOut("fast");
+    	$("#dummy").fadeIn();
     }
 });
 getRandomSong();
