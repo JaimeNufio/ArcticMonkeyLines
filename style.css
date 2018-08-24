@@ -1,0 +1,49 @@
+#words{
+	font-size:4vw;
+}
+
+@font-face {
+  font-family: 'Cinzel';
+  src:  url('Cinzel-Regular.woff2') format('woff2'),
+        url('Cinzel-Regular.woff') format('woff');
+}
+
+*{
+	font-family:'Cinzel';
+	font-style:italic;
+	color:#edb;
+}
+
+#title{
+	font-size: 6.5vw;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+body{
+	background-color:#000;
+}
+
+hr{
+	 border: none;
+  border-top: 1px solid ;
+	color:#edb;	
+}
+
+.container h1{
+	font-family:'Cinzel';
+	font-style:italic;
+	color:#edb;
+	letter-spacing:4px;
+	text-transform:uppercase;
+
+}
+
+.container-fluid .jumbotron{
+	background-color:#000;
+	padding-bottom:0em;
+}
+
+
+
+
