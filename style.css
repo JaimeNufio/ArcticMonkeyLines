@@ -46,6 +46,17 @@
 	white-space: pre-line;
 }
 
+@media screen and (max-width: 800px) {
+	.small{
+		font-size:4vw !important;
+	}
+	.lead{
+		font-size:4vw !important;
+	}
+	#lyrics{
+		font-size:5vw;
+	}
+}
 @media screen and (max-width: 1300px) {
 	.small{
 		font-size:3vw !important;
