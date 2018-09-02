@@ -1,6 +1,8 @@
 #words{
 }
-
+html, body {
+    height:100%;
+}
 @font-face {
     font-family: 'cinzelregular';
     src: url('cinzel-regular-webfont.woff2') format('woff2'),
@@ -23,6 +25,7 @@
 #tip{
 	text-align:center;
 	padding:2vw;
+	margin-bottom:500vw;
 }
 
 #title{
@@ -36,21 +39,27 @@
 #titleMini{
 	margin-top:1vw;
 	text-transform:uppercase;
+	text-align:center;	
 }
 
 #lyrics{
 	white-space: pre-line;
 }
 
+#disclaimer{
+	text-align:center;
+	font-size:1.5vw !important;
+}
+
 @media screen and (min-width: 1200px) {
 	.small{
-		font-size:1.6vw !important;
+		font-size:2.2vw !important;
 	}
 	.lead{
-		font-size:1.7vw !important;
+		font-size:2.3vw !important;
 	}
 	#lyrics{
-		font-size:1.5vw !important;
+		font-size:1.7vw !important;
 	}
 	#words{
 		font-size:2.5vw !important;
@@ -58,16 +67,19 @@
 }
 @media screen and (max-width: 1200px) {
 	.small{
-		font-size:2vw !important;
+		font-size:3.5vw !important;
 	}
 	.lead{
-		font-size:2vw !important;
+		font-size:3.2vw !important;
 	}
 	#lyrics{
 		font-size:3vw !important;
 	}
 	#words{
 		font-size:4.5vw !important;
+	}
+	#disclaimer{
+		font-size:1.7vw !important;
 	}
 }
 @media screen and (max-width: 992px) {
@@ -97,6 +109,9 @@
 	#words{
 		font-size:6.3vw !important
 	}
+	#disclaimer{
+		font-size:3.5vw !important;
+	}
 }
 @media screen and (max-width: 576px) {
 	.small{
@@ -121,6 +136,7 @@
 	display:inline-block;
 	background-color:#edb;
 	padding:.2vw;
+	float:top;
 }
 #album{
 	width:100%;
@@ -158,7 +174,7 @@ hr{
 }
 
 .row .column{
-	text-align:center;
+	text-align:center !important;
 	margin-bottom:1vw !important;
 	margin-top:5vw;
 }
